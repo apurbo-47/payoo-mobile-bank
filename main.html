@@ -54,7 +54,7 @@
                         <h3>Pay Bill</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded-md">
+                    <div id="transaction-box" class="box border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
@@ -63,7 +63,7 @@
 
                 <!-- add money section -->
                 <section id="addMoney" class="mt-10">
-                    <h2 class="text-lg font-semibold ml-8">Add Money</h2>
+                    <h2 class="text-lg font-bold text-center">Add Money</h2>
 
    <div class="">
     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -71,7 +71,7 @@
      <div class="card w-full max-w-sm shrink-0 shadow-2xl">
       <div class="card-body">
             <legend>Select Bank</legend>
-            <select class="select">
+            <select id="allBank" class="select">
                 <option disabled selected>Select Bank</option>
                 <option value="Bkash">Bkash</option>
                 <option value="Nagad">Nagad</option>
@@ -84,7 +84,7 @@
         <input id="amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
           <input value="1234" id="pin" type="text" class="input" placeholder="type your pin" required />
-          <div><a class="link link-hover">Forgot password?</a></div>
+          
           <button id="add-money" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Add Money</button>
         </fieldset>
       </div>
@@ -96,20 +96,20 @@
 
                 <!-- cashout section -->
              <section id="cashout" class="mt-10">
-                <h2 class="text-lg font-semibold ml-8">Cash Out</h2>
+                <h2 class="text-lg font-bold text-center">Cash Out</h2>
              <div class="">
     <div class="hero-content flex-col lg:flex-row-reverse">
     
-     <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+     <div class="card w-full max-w-sm shrink-0 shadow-2xl ">
       <div class="card-body">
         <fieldset class="fieldset"> 
                     <label class="label">Number</label>
-        <input value="01602803835" id="acount-number" type="Acount Number" class="input" placeholder="type your number" required />
+        <input value="" id="acount-number" type="Acount Number" class="input" placeholder="type your number" required />
         <label class="label">Amount</label>
         <input id="cashout-amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
           <input value="1234" id="cashout-pin" type="text" class="input" placeholder="type your pin" required />
-          <div><a class="link link-hover">Forgot password?</a></div>
+         
           <button id="cashout-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Withdraw Money</button>
         </fieldset> 
         
@@ -121,6 +121,14 @@
 
                 </section>
 
+                <!-- transactions history -->
+            <section id="transaction-history" class="mt-10">
+                    <h2 class="text-lg font-bold text-center">Transactions History</h2>
+
+                   <div id="transaction-container">
+
+                   </div> 
+            </section>
 
             </section>
 
@@ -129,8 +137,10 @@
 
 
 
+    <script src="utilities/utilities.js"></script>
     <script src="script/add-money.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transactionHistory.js"></script>
 </body>
 </html>
