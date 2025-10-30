@@ -2,11 +2,14 @@
 document.getElementById ('addMoney').style.display = 'block';
  document.getElementById ('cashout').style.display = 'none';
 document.getElementById ('transaction-history').style.display = 'none';
+document.getElementById ('transfer-money').style.display = 'none';
+
 document.getElementById ('add-money-box').addEventListener ('click',
     function (){
        handleToggle ('addMoney', 'block');
        handleToggle ('cashout', 'none');
         handleToggle('transaction-history', 'none');
+         handleToggle('transfer-money', 'none');
 })
 
 document.getElementById ('cashout-box').addEventListener ('click',
@@ -14,6 +17,7 @@ document.getElementById ('cashout-box').addEventListener ('click',
        handleToggle ('addMoney', 'none');
        handleToggle ('cashout', 'block');
         handleToggle('transaction-history', 'none');
+         handleToggle('transfer-money', 'none');
 })
 
 

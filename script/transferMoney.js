@@ -1,10 +1,10 @@
-document.getElementById ('cashout-btn').addEventListener ('click', 
+document.getElementById ('transfer-btn').addEventListener ('click', 
     function (event) {
     event.preventDefault();
-    const acountNumber = document.getElementById ('cashout-number').value;
-    const pin = document.getElementById ('cashout-pin').value;
+    const acountNumber = document.getElementById ('transfer-number').value;
+    const pin = document.getElementById ('transfer-pin').value;
     const convertedPin = parseInt (pin);
-    const amount = document.getElementById ('cashout-amount').value;
+    const amount = document.getElementById ('transfer-amount').value;
     const convertedAmount = parseFloat (amount);
     const mainBalance = document.getElementById ('main-balance').innerText;
     const convertedMainBalance = parseFloat (mainBalance);
@@ -23,7 +23,7 @@ document.getElementById ('cashout-btn').addEventListener ('click',
         const div = document.createElement ('div');
             div.classList.add ('bg-white', 'm-5', 'text-center', 'gap-2')
                div.innerHTML = `
-               <h1> Cash Out: </h1>
+               <h1> Transfer Money: </h1>
                <h3> Amount: ${amount} </h3>
                <p> Acount Number: ${acountNumber} </p>
                

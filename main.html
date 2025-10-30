@@ -39,7 +39,7 @@
                         <h3>Cashout</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded-md">
+                    <div id="transfer-box" class="box border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="assets/money1.png" alt="">
                         <h3>Transfer</h3>
                     </div>
@@ -79,7 +79,7 @@
             </select>
         <fieldset class="fieldset">
           <label class="label">Number</label>
-        <input value="01602803835" id="acount-number" type="Acount Number" class="input" placeholder="type your number" required />
+        <input value="" id="acount-number" type="Acount Number" class="input" placeholder="type your number" required />
         <label class="label">Amount</label>
         <input id="amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
@@ -104,7 +104,7 @@
       <div class="card-body">
         <fieldset class="fieldset"> 
                     <label class="label">Number</label>
-        <input value="" id="acount-number" type="Acount Number" class="input" placeholder="type your number" required />
+        <input value="" id="cashout-number" type="Acount Number" class="input" placeholder="type your number" required />
         <label class="label">Amount</label>
         <input id="cashout-amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
@@ -130,6 +130,35 @@
                    </div> 
             </section>
 
+                <!-- transfer money -->
+            <section id="transfer-money" class="mt-10">
+                <h2 class="text-lg font-bold text-center">Transfer Money</h2>
+             <div class="">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+    
+     <div class="card w-full max-w-sm shrink-0 shadow-2xl ">
+      <div class="card-body">
+        <fieldset class="fieldset"> 
+                    <label class="label">Number</label>
+        <input value="" id="transfer-number" type="Acount Number" class="input" placeholder="type your number" required />
+        <label class="label">Amount</label>
+        <input id="transfer-amount" type="Acount Number" class="input" placeholder="type your amount" required />
+          <label class="label">PIN</label>
+          <input value="1234" id="transfer-pin" type="text" class="input" placeholder="type your pin" required />
+         
+          <button id="transfer-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Send Now</button>
+        </fieldset> 
+        
+      </div>
+      </div>
+     </div>
+    </div>   
+                                
+
+                </section>
+
+
+
             </section>
 
         </header>
@@ -142,5 +171,6 @@
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transactionHistory.js"></script>
+    <script src="script/transferMoney.js"></script>
 </body>
 </html>
