@@ -49,7 +49,7 @@
                         <h3>Get Bonus</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded-md">
+                    <div id="paybill-box" class="box border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
                         <h3>Pay Bill</h3>
                     </div>
@@ -83,7 +83,7 @@
         <label class="label">Amount</label>
         <input id="amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
-          <input value="1234" id="pin" type="text" class="input" placeholder="type your pin" required />
+          <input value="1234" id="pin" type="password" class="input" placeholder="type your pin" required />
           
           <button id="add-money" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Add Money</button>
         </fieldset>
@@ -108,7 +108,7 @@
         <label class="label">Amount</label>
         <input id="cashout-amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
-          <input value="1234" id="cashout-pin" type="text" class="input" placeholder="type your pin" required />
+          <input value="1234" id="cashout-pin" type="password" class="input" placeholder="type your pin" required />
          
           <button id="cashout-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Withdraw Money</button>
         </fieldset> 
@@ -144,7 +144,7 @@
         <label class="label">Amount</label>
         <input id="transfer-amount" type="Acount Number" class="input" placeholder="type your amount" required />
           <label class="label">PIN</label>
-          <input value="1234" id="transfer-pin" type="text" class="input" placeholder="type your pin" required />
+          <input value="1234" id="transfer-pin" type="password" class="input" placeholder="type your pin" required />
          
           <button id="transfer-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Send Now</button>
         </fieldset> 
@@ -156,6 +156,40 @@
                                 
 
                 </section>
+
+                <!-- pay bill -->
+            <section id="paybill" class="mt-10">
+                <h2 class="text-lg font-bold text-center">Pay Bill</h2>
+             <div class="">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+    
+     <div class="card w-full max-w-sm shrink-0 shadow-2xl ">
+      <div class="card-body">
+        <legend>Select To Pay</legend>
+            <select id="payBank" class="select">
+                <option disabled selected>Select Bank</option>
+                <option value="Bkash">Bkash</option>
+                <option value="Nagad">Nagad</option>
+                <option value="DBBL">DBBL</option>
+            </select>
+        <fieldset class="fieldset"> 
+                    <label class="label">Bill Acount Number</label>
+        <input value="" id="paybill-number" type="Acount Number" class="input" placeholder="Enter acount number" required />
+        <label class="label">Pay to Amount</label>
+        <input id="paybill-amount" type="Acount Number" class="input" placeholder="add  amount to pay" required />
+          <label class="label">PIN</label>
+          <input value="1234" id="paybill-pin" type="password" class="input" placeholder="type your pin" required />
+         
+          <button id="paybill-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Pay Now</button>
+        </fieldset> 
+        
+      </div>
+      </div>
+     </div>
+    </div>   
+                                
+
+                </section> 
 
 
 
@@ -172,5 +206,6 @@
     <script src="script/cashout.js"></script>
     <script src="script/transactionHistory.js"></script>
     <script src="script/transferMoney.js"></script>
+    <script src="script/paybill.js"></script>
 </body>
 </html>
