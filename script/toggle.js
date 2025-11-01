@@ -4,6 +4,7 @@ document.getElementById ('addMoney').style.display = 'block';
 document.getElementById ('transaction-history').style.display = 'none';
 document.getElementById ('transfer-money').style.display = 'none';
 document.getElementById ('paybill').style.display = 'none';
+document.getElementById ('get-bonus').style.display = 'none';
 
 document.getElementById ('add-money-box').addEventListener ('click',
     function (){
@@ -12,6 +13,7 @@ document.getElementById ('add-money-box').addEventListener ('click',
         handleToggle('transaction-history', 'none');
          handleToggle('transfer-money', 'none');
          handleToggle('paybill', 'none');
+         handleToggle('get-bonus', 'none');
 })
 
 document.getElementById ('cashout-box').addEventListener ('click',
@@ -21,6 +23,7 @@ document.getElementById ('cashout-box').addEventListener ('click',
         handleToggle('transaction-history', 'none');
          handleToggle('transfer-money', 'none');
          handleToggle('paybill', 'none');
+         handleToggle('get-bonus', 'none');
 })
 
 

@@ -44,7 +44,7 @@
                         <h3>Transfer</h3>
                     </div>
 
-                    <div class="box border p-4 text-center rounded-md">
+                    <div id="getBonus-box" class="box border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
                         <h3>Get Bonus</h3>
                     </div>
@@ -191,6 +191,28 @@
 
                 </section> 
 
+                <!-- get bonus -->
+             <section id="get-bonus" class="mt-10">
+                <h2 class="text-lg font-bold text-center">Get Bonus</h2>
+             <div class="">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+    
+     <div class="card w-full max-w-sm shrink-0 shadow-2xl ">
+      <div class="card-body">
+       
+        <fieldset class="fieldset"> 
+                    <label class="label">Enter Cupon Bonus</label>
+        <input value="" id="getBonus-number" type="Acount Number" class="input" placeholder="Enter 6 digit cupon code" required />
+          <button id="bonus-btn" id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Get Bonus</button>
+        </fieldset> 
+        
+      </div>
+      </div>
+     </div>
+    </div>   
+                                
+
+                </section>      
 
 
             </section>
@@ -207,5 +229,6 @@
     <script src="script/transactionHistory.js"></script>
     <script src="script/transferMoney.js"></script>
     <script src="script/paybill.js"></script>
+    <script src="script/bonus.js"></script>
 </body>
 </html>
