@@ -26,8 +26,8 @@ document.getElementById ('paybill-btn').addEventListener('click',
             div.classList.add ('bg-white', 'm-5', 'text-center', 'gap-2')
                div.innerHTML = `
                <h1> Pay Bill form: ${selectBank} </h1>
-               <h3> Amount: ${amount} </h3>
-               <p> Acount Number: ${acountNumber} </p>
+               <h3> Amount: ${amount} Tk </h3>
+               <p> Bill Acount Number: ${acountNumber} </p>
                
                `
                 container.appendChild (div);

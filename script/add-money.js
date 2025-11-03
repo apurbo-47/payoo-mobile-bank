@@ -26,7 +26,7 @@ document.getElementById ('add-money').addEventListener('click',
             div.classList.add ('bg-white', 'm-5', 'text-center', 'gap-2')
                div.innerHTML = `
                <h1> Added Money form: ${selectedBank} </h1>
-               <h3> Amount: ${amount} </h3>
+               <h3> Amount: ${amount} Tk </h3>
                <p> Acount Number: ${acountNumber} </p>
                
                `

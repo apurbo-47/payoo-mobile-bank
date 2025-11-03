@@ -14,7 +14,7 @@ document.getElementById ('bonus-btn').addEventListener ('click',
         const div = document.createElement ('div');
             div.classList.add ('bg-white', 'm-5', 'text-center', 'gap-2')
                div.innerHTML = `
-               <h1> Get bonus: </h1>
+               <h1> Cupon bonus: </h1>
                <h3> 500 TK </h3>
                
                `

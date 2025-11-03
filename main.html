@@ -16,10 +16,10 @@
                 <img src="assets/Group.png" alt="">
                 <div>
                     <h1 class="text-3xl font-bold"> $ <span id="main-balance">4500</span> </h1>
-                    <p class="border rounded p-1 text-[#080808] text-sm">available balance</p>
+                    <p class="border rounded p-1 text-[#080808] text-sm ">available balance</p>
                 </div>
                 </div>
-                <button class="btn">Logout</button>
+                <button id="logout-btn" class="btn bg-black text-white hover:bg-blue-700">Logout</button>
             </nav>
 
             <section class="mt-10">
@@ -29,32 +29,32 @@
                     <!-- card section -->
                 <div class="cards grid grid-cols-3 mt-14 gap-4 p-6 ">
 
-                    <div id="add-money-box" class="box border p-4 text-center rounded-md">
+                    <div id="add-money-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <h3>Add Money</h3>
                     </div>
 
-                    <div id="cashout-box" class="box border p-4 text-center rounded-md">
+                    <div id="cashout-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                         <h3>Cashout</h3>
                     </div>
 
-                    <div id="transfer-box" class="box border p-4 text-center rounded-md">
+                    <div id="transfer-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/money1.png" alt="">
                         <h3>Transfer</h3>
                     </div>
 
-                    <div id="getBonus-box" class="box border p-4 text-center rounded-md">
+                    <div id="getBonus-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
                         <h3>Get Bonus</h3>
                     </div>
 
-                    <div id="paybill-box" class="box border p-4 text-center rounded-md">
+                    <div id="paybill-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
                         <h3>Pay Bill</h3>
                     </div>
 
-                    <div id="transaction-box" class="box border p-4 text-center rounded-md">
+                    <div id="transaction-box" class="box border p-4 text-center rounded-md hover:bg-teal-700">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
@@ -223,6 +223,7 @@
 
 
     <script src="utilities/utilities.js"></script>
+    <script src="script/logout.js"></script>
     <script src="script/add-money.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
